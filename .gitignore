@@ -1,0 +1,24 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.terraform.lock.hcl*
+
+# tf vars & plans
+*.tfvars
+*.tfplan
+!sample.tfvars
+
+# rke2
+*.kubeconfig
+*.priv_key
+.ssh
+
+# VPN gateway
+.openvpn
+*.ovpn
+
+# Test output
+tests/*.xml
