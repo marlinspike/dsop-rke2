@@ -129,6 +129,7 @@ module "init" {
   pre_userdata  = var.pre_userdata
   post_userdata = var.post_userdata
   ccm           = var.enable_ccm
+  cloud         = var.cloud
   node_labels   = "[]"
   #node_labels   = "[\"failure-domain.beta.kubernetes.io/region=${data.azurerm_resource_group.rg.location}\"]"
   node_taints = "[\"CriticalAddonsOnly=true:NoExecute\"]"
